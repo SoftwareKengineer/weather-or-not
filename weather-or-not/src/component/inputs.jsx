@@ -9,7 +9,7 @@ function inputs() {
 
         <input type="text"
         // this is for the search bar
-        placeholder="Search for city..."
+        placeholder="Enter zipcode..."
         className="text-xl font-light p-2 w-full shadow-xl focus:outline-none capitalize placeholder:lowercase"
 
     />
