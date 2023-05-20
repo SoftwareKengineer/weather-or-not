@@ -12,7 +12,7 @@ import getweatherdata from "./services/weatherservice"
 
 function App() {
 const fetchweather = async () =>{
-  const data = await getWeatherData('weather', { q: "atlanta" });
+  const data = await getformattedweatherdata( { q: "atlanta" });
   console.log(data);
 }
 
@@ -23,16 +23,16 @@ fetchweather();
   <>
   <div className="mx-auto mx-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl
 shadow-gray-400">
- <topbuttons />
- < inputs />
+<topbuttons />
+< inputs />
 
- <timeandlocation />
- <tempanddetails />
+<timeandlocation />
+<tempanddetails />
 
- <forecast title="hourly forecast"/>
- <forecast title="daily forecast"/>
- </div>
- <input/>
+<forecast title="hourly forecast"/>
+<forecast title="daily forecast"/>
+</div>
+<input/>
 </>
   );
 }

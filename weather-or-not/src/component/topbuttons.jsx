@@ -12,25 +12,25 @@ function topbuttons() {
     },
     {
 
-        id:1,
+        id:2,
         title: 'london'
 
     },
     {
 
-        id:2,
+        id:3,
         title: 'sydney'
 
     },
     {
 
-        id:3,
+        id:4,
         title: 'tokyo'
 
     },
     {
 
-        id:4,
+        id:5,
         title: 'atlanta'
 
     },
@@ -42,11 +42,8 @@ function topbuttons() {
     },
 ]
 
-  return <div className= "flex items-center justify-around my-6">
-    {cities.map(city) => (
-
-        <button key={city.id} className=" text-white text-lg font-medium">{city.title}</button>
-    ))
+return <div className= "flex items-center justify-around my-6">
+    {cities.map(city) => (<button key={city.id} className=" text-white text-lg font-medium">{city.title}</button>)
     </div>
     }
 export default topbuttons;
