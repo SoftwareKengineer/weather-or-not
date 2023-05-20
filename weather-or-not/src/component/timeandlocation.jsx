@@ -3,19 +3,22 @@
 
 
 import React from 'react'
+import { formattolocaltime } from "../services/weatherservice";
 
-function timeandlocation() {
+function timeandlocation(
+    {weather: {dt, timezone, name, country}}
+) {
   return (
-    <div>
-        <div className="flex items-center justify-center my-6">
-            <p/> className="text-white text-xl font-extralight">
-                Friday, 19 May 2023 | Local time: 5:59
-            <p/>
-        <div/>
+<div>
+    <div className="flex items-center justify-center my-6">
+        <p/> className="text-white text-xl font-extralight">
+            {formattolocaltime(dt, timezone)}
+        <p/>
+    <div/>
 
         <div className="flex items-center justify-center my-3">
 
-            <p className=" text-white text-3xl font-medium"></p>
+            <p className=" text-white text-3xl font-medium">{'${name}, ${country'}</p>
         </div>
     <div/>
     );
