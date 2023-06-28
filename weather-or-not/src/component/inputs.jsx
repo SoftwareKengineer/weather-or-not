@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { UilSearch, UilLocationPoint } from "@iconscout/react-unicons";
 
-function Inputs({ setQuery, units, setUnits }) {
+const Inputs= ({ setQuery, units, setUnits }) =>{
   const [city, setCity] = useState("");
 
   const handleUnitsChange = (e) => {
