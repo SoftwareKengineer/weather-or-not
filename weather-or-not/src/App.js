@@ -1,5 +1,4 @@
-// import "./App.css";
-// import { UilReact } from "@iconscout/react-unicons";
+
 import React, { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./component/services/WeatherService";
 import Inputs from "./component/Inputs";
@@ -7,6 +6,9 @@ import TopButtons from "./component/TopButtons";
 import TimeAndLocation from "./component/TimeAndLocation";
 import TempAndDetails from "./component/TemperatureAndDetails";
 import Forecast from "./component/Forecast";
+// import "./App.css";
+// import { UilReact } from "@iconscout/react-unicons";
+
 
 function App() {
   const [query, setQuery] = useState({ q: "berlin" });
