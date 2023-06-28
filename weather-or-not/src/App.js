@@ -1,6 +1,6 @@
-import "./App.css";
-import { UilReact } from "@iconscout/react-unicons";
-import { useEffect, useState } from "react";
+// import "./App.css";
+// import { UilReact } from "@iconscout/react-unicons";
+import React, { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./component/services/WeatherService";
 import Inputs from "./component/Inputs";
 import TopButtons from "./component/TopButtons";
