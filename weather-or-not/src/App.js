@@ -1,11 +1,11 @@
 
 import React, { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./component/services/WeatherService";
-import Inputs from "./component/Inputs";
-import TopButtons from "./component/TopButtons";
-import TimeAndLocation from "./component/TimeAndLocation";
+import Inputs from "./component/inputs";
+import TopButtons from "./component/topbuttons";
+import TimeAndLocation from "./component/timeandlocation";
 import TempAndDetails from "./component/TemperatureAndDetails";
-import Forecast from "./component/Forecast";
+import Forecast from "./component/forecast";
 // import "./App.css";
 // import { UilReact } from "@iconscout/react-unicons";
 
