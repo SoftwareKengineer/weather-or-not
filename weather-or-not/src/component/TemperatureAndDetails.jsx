@@ -9,7 +9,7 @@ import {
   UilSunset,
 } from '@iconscout/react-unicons';
 
-import { iconURLFromCode, formatToLocalTime } from './services/WeatherService';
+import { iconURLFromCode, formatToLocalTime } from './services/weatherservice';
 
 function TempAndDetails({
   weather: {

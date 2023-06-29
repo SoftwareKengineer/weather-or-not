@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import { iconURLFromCode } from "./services/WeatherService";
+import { iconURLFromCode } from "./services/weatherservice";
 
 function Forecast({ title, items }) {
   if(!items || !Array.isArray(items)){

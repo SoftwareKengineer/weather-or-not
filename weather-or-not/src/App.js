@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from "react";
-import { getFormattedWeatherData } from "./component/services/WeatherService";
+import { getFormattedWeatherData } from "./component/services/weatherservice";
 import Inputs from "./component/inputs";
 import TopButtons from "./component/topbuttons";
 import TimeAndLocation from "./component/timeandlocation";
