@@ -8,9 +8,16 @@ const Inputs= ({ setQuery, units, setUnits }) =>{
     const selectedUnit = e.currentTarget.name;
     if (units !== selectedUnit) setUnits(selectedUnit);
   };
+const testFunc = (e) => {
+  if(e.key === 'Enter' && city !== ""){
+    console.log(e)
+    handleSearchClick()
+  }
+}
 
-  const handleSearchClick = (e) => {
-    if (city !== "" || (city !=="" && e.key === "Enter")) {
+  const handleSearchClick = () => {
+    
+    if (city !== "" ) {
 
       setQuery({ q: city })}
       ;
@@ -33,6 +40,7 @@ const Inputs= ({ setQuery, units, setUnits }) =>{
           // this is for the search bar
           value={city}
           onChange={(e) => setCity(e.currentTarget.value)}
+          onKeyPress={testFunc}
           placeholder="Search..."
           className="text-xl font-light p-2 w-full shadow-xl focus:outline-none capitalize placeholder:lowercase"
         />
