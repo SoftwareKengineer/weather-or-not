@@ -9,8 +9,11 @@ const Inputs= ({ setQuery, units, setUnits }) =>{
     if (units !== selectedUnit) setUnits(selectedUnit);
   };
 
-  const handleSearchClick = () => {
-    if (city !== "") setQuery({ q: city });
+  const handleSearchClick = (e) => {
+    if (city !== "" || (city !=="" && e.key === "Enter")) {
+
+      setQuery({ q: city })}
+      ;
   };
 
   const handleLocationClick = () => {
